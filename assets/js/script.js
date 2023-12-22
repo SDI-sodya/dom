@@ -11,15 +11,19 @@
   3. 
 */
 
-// 1
-const buttons = document.getElementsByTagName("button");
-const button = buttons[0];
+// // 1
+// const buttons = document.getElementsByTagName("button");
+// const button = buttons[0];
 
-// 2
-// eventTarget.AddEventListeber('event type', callbackListener)
-button.addEventListener("click", btnAlert);
+// // 2
+// // eventTarget.AddEventListeber('event type', callbackListener)
+// button.addEventListener("click", btnAlert);
 
-// 3
-function btnAlert() {
-	alert("Hello from JS");
-}
+// // 3
+// function btnAlert() {
+// 	alert("Hello from JS");
+// }
+
+const button = document.getElementsByTagName("button")[0];
+let clickQuantity = 0;
+button.addEventListener("click", () => alert(++clickQuantity));
