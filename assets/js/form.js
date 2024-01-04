@@ -37,7 +37,7 @@ addTask.addEventListener("submit", (e) => {
 				const deletedTaskIndex = todos
 					.map((el) => el.text)
 					.indexOf(deletedTaskText);
-				//
+
 				if (deletedTaskIndex !== -1) {
 					todos = todos
 						.slice(0, deletedTaskIndex)
